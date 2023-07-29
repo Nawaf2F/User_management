@@ -1,0 +1,27 @@
+<!--Update User-->
+
+<form action="/update/<%=user._id%>?_method=PUT" method="POST">
+    <div class="container" style="width: 25rem; display: inline-block; margin: 3px;">
+        <div class="row mt-4">
+            <div class="col-md-9 offset-md-1">
+                <div class="card">
+
+                    <div class="card-body">
+                        <h5 class="card-title">User Name: <input type="text" id="name" name="name" class="form-control"
+                                value="<%=user.name%>">
+                        </h5>
+                        <hr>
+                        <p class="card-text">Email: <input type="text" id="email" name="email" class="form-control"
+                                value="<%=user.email%>">
+                        </p>
+                        <p class="card-text">Phone: <input type="text" id="phone" name="phone" class="form-control"
+                                value="<%=user.phone%>">
+                        </p>
+                        <button type="submit" class="btn btn-primary">update</button>
+                        <a href="/show" class="btn btn-danger"> cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

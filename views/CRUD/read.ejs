@@ -1,0 +1,23 @@
+<!--view users-->
+    <div class="container" style="width: 25rem; display: inline-block; margin: 3px;">
+        <div class="row mt-4">
+            <div class="col-md-9 offset-md-1">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">User Name: <%=user.name%>
+                        </h5>
+                        <hr>
+                        <p class="card-text">Email: <%=user.email%>
+                        </p>
+                        <p class="card-text">Phone: <%=user.phone%>
+                        </p>
+
+                        <a href="update/<%=user._id%>" class="btn btn-primary">update</a>
+                        <a href="delete/<%=user._id%>?_method=delete" class="btn btn-danger">delete</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
